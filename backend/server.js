@@ -12,7 +12,7 @@ app.use(cors({
 }));
 
 // MongoDB connection
-const mongoURI = "mongodb+srv://piyushrathi105:19QXv6uNNlARGBiy@cluster0.grxmynq.mongodb.net/HappyMaps?retryWrites=true&w=majority&appName=Cluster0";
+const mongoURI = "NODE_MONGO_URI";
 mongoose.connect(mongoURI);
 
 
