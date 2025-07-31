@@ -1,0 +1,311 @@
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.Heading-Card {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  
+  transform: translateX(-50%);
+  padding: 8px 30px;
+  text-align: center;
+
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  color: #000000;
+  z-index: 1000;
+
+  background: rgba(0, 0, 0, 0.087);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(5px) saturate(180%);
+  -webkit-backdrop-filter: blur(5px) saturate(180%);
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+
+  width: 290px;
+  text-align: right;
+  transition: all 0.3s ease-in-out;
+}
+
+
+
+
+.Happiness-Card {
+  position: absolute;
+  bottom: 25px;
+  left: 20px;
+
+  width: 350px;
+  height: 40px;
+  padding: 20px 20px;
+
+  background: rgba(0, 0, 0, 0.087);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px) saturate(180%);
+  -webkit-backdrop-filter: blur(10px) saturate(180%); 
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  transition: all 0.3s ease-in-out;
+
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  color: #000000;
+  z-index: 1000;
+}
+
+.Logo{
+  position: absolute;
+  top: 8px;
+  left: 25px;
+  width: 50px;
+  height: 50px;
+
+}
+
+.Controls {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  z-index: 1000;
+
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  background: rgba(0, 0, 0, 0.087);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(5px) saturate(180%);
+  -webkit-backdrop-filter: blur(5px) saturate(180%);
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  min-width: 200px;
+}
+
+
+.Toggle-Heatmap {
+  background: rgba(255, 255, 255, 0.41);
+  backdrop-filter: blur(5px) saturate(180%);
+  -webkit-backdrop-filter: blur(5px) saturate(180%);
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 30px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  color: #000000;
+  z-index: 1000;
+  transition: background 0.3s ease;
+}
+
+.Toggle-Heatmap:hover {
+  background: rgba(0, 255, 94, 0.4);
+}
+
+
+.Radius-Controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  background: rgba(255, 255, 255, 0.41);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(5px) saturate(180%);
+  -webkit-backdrop-filter: blur(5px) saturate(180%);
+  padding: 8px;
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  color: #000000;
+  z-index: 1000;
+}
+
+.Search-Card {
+  position: absolute;
+  top: 35%;
+  right: 20px;
+  z-index: 1000;
+}
+
+.Search-Container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center; 
+}
+
+
+.Search-Button {
+  top: 35%;
+  right: 20px;
+
+  width: 230px;
+  height: 64px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  
+
+  background: rgba(0, 0, 0, 0.087);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(5px) saturate(180%);
+  -webkit-backdrop-filter: blur(5px) saturate(180%);
+  border-radius: 8px;
+
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  color: #000000;
+
+  z-index: 1000;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.Search-Button:hover {
+  background: rgba(255, 255, 255, 0.4);
+  transform: translateY(-10%);
+}
+.Search-Button img {
+  width: 24px;
+  height: 24px;
+
+  object-fit: contain;
+}
+
+.Search-Button:hover {
+  background: rgba(0, 255, 94, 0.4);
+}
+
+.Search-Input-Box {
+  top: 50%;
+  right: 20px;
+  
+  
+  width: 300px;
+
+  height: 40px;
+  padding: 6px 10px;
+
+
+  background: rgba(0, 0, 0, 0.087);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(5px) saturate(180%);
+  -webkit-backdrop-filter: blur(5px) saturate(180%);
+  
+  border-radius: 8px;
+  
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  
+  color: #000000;
+  
+  z-index: 1000;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.Google-Maps-Search-Container {
+  position: fixed;
+  top: 70px;
+  left: 10px;
+  z-index: 9999;
+  width: auto;
+}
+
+/* Google Places Autocomplete Input */
+#pac-input {
+  background: rgba(0, 0, 0, 0.087);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px) saturate(180%);
+  -webkit-backdrop-filter: blur(10px) saturate(180%);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #000000;
+  
+  padding: 0 15px;
+  text-overflow: ellipsis;
+  width: 350px;
+  height: 50px;
+  border-radius: 10px;
+  
+  box-sizing: border-box;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+
+#pac-input:focus {
+  border-color: rgba(0, 255, 94, 0.6);
+  box-shadow: 0 0 0 2px rgba(0, 255, 94, 0.2);
+}
+
+#pac-input::placeholder {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+
+.pac-container {
+  z-index: 99999 !important;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px) saturate(180%);
+  -webkit-backdrop-filter: blur(10px) saturate(180%);
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  margin-top: 2px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.pac-item {
+  padding: 10px 15px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.pac-item:hover {
+  background: rgba(0, 255, 94, 0.1);
+}
+
+.pac-item:last-child {
+  border-bottom: none;
+}
+
+
+.X-Button {
+  background: rgba(255, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+  color: #000000;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease-in-out;
+}
+
+.X-Button:hover {
+  background: rgba(255, 0, 0, 0.4);
+  transform: scale(1.1);
+}
+
